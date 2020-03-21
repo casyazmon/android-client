@@ -11,7 +11,11 @@ buildscript {
         jcenter()
     }
     dependencies {
+<<<<<<< HEAD
         classpath 'com.android.tools.build:gradle:3.6.1'
+=======
+        classpath 'com.android.tools.build:gradle:3.3.2'
+>>>>>>> 2bc6a9d79ceda1c79b17c0bb6c9bb503cdcdb63b
         classpath 'io.fabric.tools:gradle:1.+'
         classpath 'com.github.triplet.gradle:play-publisher:1.1.5'
     }
@@ -178,7 +182,11 @@ android {
 
 
         //Square dependencies
+<<<<<<< HEAD
         implementation("com.squareup.retrofit2:retrofit:$rootProject.retrofitVersionLatest") {
+=======
+        implementation('com.squareup.retrofit2:retrofit:$rootProject.retrofitVersionLatest') {
+>>>>>>> 2bc6a9d79ceda1c79b17c0bb6c9bb503cdcdb63b
             // exclude Retrofit’s OkHttp peer-dependency module and define your own module import
             exclude module: 'okhttp'
         }
